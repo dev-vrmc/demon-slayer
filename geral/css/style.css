@@ -405,7 +405,6 @@ img {
 
 .img-container img {
   width: 100%;
-  /* Remove o width fixo 500px! */
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
@@ -671,7 +670,7 @@ img {
   transition: filter 0.3s ease;
 }
 
-.about__subtitle:hover{
+.about__subtitle:hover {
   filter: brightness(1);
 }
 
@@ -862,81 +861,85 @@ img {
   text-align: center;
 }
 
-  .carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-  .carousel-track {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-  }
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
 
-  /* Como só tem 1 iframe, esta regra não tem efeito, pode ignorar */
-  .carousel-track > * {
-    min-width: 100%;
-    flex-shrink: 0;
-    user-select: none;
-  }
+/* Como só tem 1 iframe, esta regra não tem efeito, pode ignorar */
+.carousel-track>* {
+  min-width: 100%;
+  flex-shrink: 0;
+  user-select: none;
+}
 
-  .carousel img {
-    max-height: 1200px;
-  }
+.carousel img {
+  max-height: 1000px;
+}
 
-  .carousel-track iframe {
-    width: 100%;
-    border-radius: 12px;
-    outline: none;
-    aspect-ratio: 16 / 9;
-  }
+.carousel-track iframe {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  aspect-ratio: 16 / 9;
+}
 
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--first-color);
-    border: 1px solid var(--first-color);
-    z-index: 10;
-    transition: color 0.3s ease, border-color 0.3s ease;
-  }
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(247, 247, 247);
+  text-shadow:
+  0 0 5px white,
+  0 0 10px white,
+  0 0 20px white,
+  0 0 40px white,
+  0 0 80px white;
 
-  .carousel-btn:hover {
-    color: var(--second-color);
-  }
+  border: 2px solid rgb(247, 247, 247);
+  z-index: 10;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
 
-  .carousel-btn:active {
-    color: var(--second-color);
-  }
 
-  .carousel-btn.prev {
-    left: 10px;
-  }
+.carousel-btn:active {
+  color: var(--second-color);
+}
 
-  .carousel-btn.next {
-    right: 10px;
-  }
+.carousel-btn.prev {
+  left: 10px;
+}
 
-  ::-webkit-scrollbar {
-    width: .5rem;
-    background-color: var(--container-color);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--first-color);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--first-color-light);
-  }
+.carousel-btn.next {
+  right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  background-color: var(--container-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--first-color-light);
+}
 
 @media (max-width: 300px) {
   .char-content {
