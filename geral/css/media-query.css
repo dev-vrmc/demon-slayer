@@ -97,6 +97,7 @@
   .title{
     font-size: 2.5rem;
   }
+  
 }
 
 /* Telas médias (Tablet) - 827px até 1238px */
@@ -134,7 +135,8 @@
     flex-wrap: wrap;       
     flex-direction: column;     
     gap: 24px;                
-    margin: 0;                
+    margin-left: 40px;        
+    margin-right: 0;        
   }
 
   .footer__social {

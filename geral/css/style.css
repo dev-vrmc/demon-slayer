@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Caslon+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Uncial+Antiqua&display=swap');
 
 @font-face {
   font-family: "title";
@@ -170,7 +171,7 @@ img {
   color: var(--title-color);
   text-decoration: none;
   font-size: var(--big-font-size);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Bebas Neue';
   position: relative;
   padding-bottom: 4px;
   transition: color 0.3s ease;
@@ -528,7 +529,7 @@ img {
   gap: var(--biggest-font-size);
   list-style: none;
   display: flex;
-  margin-right: 150px;
+  margin-right: 110px;
 }
 
 .footer__link {
@@ -538,7 +539,7 @@ img {
   padding: 4px;
   transition: color 0.3s ease;
   font-size: var(--h1-font-size);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Bebas Neue';
 }
 
 .footer__link::after {
@@ -662,7 +663,7 @@ img {
 
 .about__subtitle {
   font-size: var(--biggest-font-size);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Bebas Neue';
   color: var(--char-color);
   text-shadow: 1px 1px 6px var(--char-color);
   padding-bottom: 20px;
