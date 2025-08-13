@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="geral/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="geral/css/media-query.css">
+    <link rel="shortcut icon" href="geral/img/logo.png" type="image/x-icon" style="width: 10%;">
+    <title>Galeria</title>
+</head>
+
+<body>
+    <header class="header" id="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <nav class="nav_container">
+          <a href="index.html" class="nav__logo">
+            <img src="geral/img/logokny.png" alt="Logo KNY" class="img__logo">
+          </a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a href="about.html" class="nav__link">Sobre</a>
+              </li> <!-- e lutas -->
+              <li class="nav__item">
+                <a href="characters.html" class="nav__link">Personagens</a> <!-- e seus dubladores -->
+              </li>
+              <li class="nav__item">
+                <a href="galery.html" class="nav__link highlight">Galeria</a>
+              </li>
+            </ul>
+    
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-fill"></i>
+            </div>
+          </div>
+          <div class="nav__actions">
+            <div class="music-btn" id="musicToggle">
+              <i class="ri-headphone-fill"></i>
+              <audio id="bgMusic" loop>
+                <source src="geral/mp3/infinity_castle_theme.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-apps-2-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main class="main">
+        <!-- Posters -->
+        <section class="gallery-section poster" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+            <h2 class="section-title title">Posters</h2>
+            <div class="carousel" id="poster-carousel">
+                <button class="carousel-btn prev" data-target="poster-carousel">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="geral/img/poster.jpg" alt="Poster 1" />
+                    <img src="geral/img/poster 2.png" alt="Poster 2" />
+                    <img src="geral/img/poster 3.png" alt="Poster 3" />
+                    <img src="geral/img/poster 4.png" alt="Poster 4" />
+                </div>
+                <button class="carousel-btn next" data-target="poster-carousel">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Trailers -->
+        <section class="gallery-section trailers" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"> 
+            <h2 class="section-title title">Trailers</h2>
+            <div class="carousel" id="trailer-carousel">
+                <button class="carousel-btn prev" data-target="trailer-carousel">&#10094;</button>
+                <div class="carousel-track">
+                    <iframe
+                        src="https://www.youtube.com/embed/x7uLutVRBfI?si=6rBP_gzvRkzyNr4u&rel=0" title="Trailer 1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/ALHG_CNt0TU?si=CEPE_lgfCvYPKD3c&rel=0" title="Trailer 2"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/KN921po7cEE?si=ol1FRJrdmJh8QOLO&rel=0" title="Trailer 3"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/CHAIe0hwYxk?si=qqUGQ6xvwIF0uivi&rel=0" title="Trailer 4"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+                <button class="carousel-btn next" data-target="trailer-carousel">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Trilha Musical -->
+        <section class="gallery-section soundtrack" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+            <h2 class="section-title title">Tema Musical</h2>
+            <div class="carousel" id="soundtrack-carousel">
+                <div class="carousel-track">
+                    <iframe src="https://www.youtube.com/embed/11iy5Hyl0fs?si=ckczU2VYbvK5nTeG"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <a href="index.html" class="footer__logo">
+                <img src="geral/img/logo.svg" alt="logo">
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="about.html" class="footer__link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="characters.html" class="footer__link">Personagens</a>
+                    </li>
+                    <li>
+                        <a href="galery.html" class="footer__link highlight">Galeria</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/dev.vrmc" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://github.com/dev-vrmc" target="_blank" class="footer__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dev-victor-roger" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <!-- <a href="https://www.whatsapp.com" target="_blank" class="footer__social-link">
+          <i class="ri-whatsapp-line"></i>
+        </a> !-->
+                </div>
+        </div>
+        <span class="footer__copy">
+            © 2025 <a href="https://dev-vrmc-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Victor
+                Roger</a>. Todos os direitos reservados.
+        </span>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script>
+        const musicBtn = document.getElementById('musicToggle');
+        const bgMusic = document.getElementById('bgMusic');
+
+        musicBtn.addEventListener('click', () => {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                musicBtn.innerHTML = '<i class="ri-music-2-fill"></i>';
+            } else {
+                bgMusic.pause();
+                musicBtn.innerHTML = '<i class="ri-play-fill"></i>';
+            }
+        });
+    </script>
+    <script src="geral/js/carousel.js"></script>
+    <script src="geral/js/index.js"> </script>
+    <script src="geral/js/main.js"> </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="geral/js/aos.js"></script>
+
+</body>
+
+</html>

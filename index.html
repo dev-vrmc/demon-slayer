@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+  <link rel="stylesheet" href="geral/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="geral/css/media-query.css">
+  <link rel="shortcut icon" href="geral/img/logo.png" type="image/x-icon">
+  <title>Início</title>
+</head>
+
+<body>
+  <header class="header" id="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+    <nav class="nav_container">
+      <a href="index.html" class="nav__logo">
+        <img src="geral/img/logokny.png" alt="Logo KNY" class="img__logo">
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link highlight">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">Sobre</a>
+          </li> <!-- e lutas -->
+          <li class="nav__item">
+            <a href="characters.html" class="nav__link ">Personagens</a> <!-- e seus dubladores -->
+          </li>
+          <li class="nav__item">
+            <a href="galery.html" class="nav__link">Galeria</a>
+          </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-fill"></i>
+        </div>
+      </div>
+      <div class="nav__actions">
+        <div class="music-btn" id="musicToggle">
+          <i class="ri-headphone-fill"></i>
+          <audio id="bgMusic" loop>
+            <source src="geral/mp3/infinity_castle_theme.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="home__container">
+      <div class="home__left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+        <img src="geral/img/back.jpg" alt="Arte Demon Slayer" />
+      </div>
+
+      <div class="home__right" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+        <h1 class="title">Demon Slayer <br>Infinity Castle</h1>
+        <h3 class="japanese-title">劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来</h3>
+        <h2 class="sinops">O confronto final começa. Tanjiro e os Caçadores de Demônios invadem o lendário Castelo
+          Infinito para enfrentar Muzan Kibutsuji, o rei dos demônios. Neste primeiro capítulo da trilogia final, a
+          batalha entre luz e trevas atinge seu ápice, com lutas épicas, sacrifícios e o destino da humanidade em jogo.
+        </h2>
+
+        <p class="release">Estreia em 2025 • 2h 35min</p>
+      </div>
+    </section>
+    <section class="gallery-section trailers" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"> 
+      <h2 class="section-title title">Trailer Principal</h2>
+      <div class="carousel" id="trailer-carousel">
+          <div class="carousel-track">
+              <iframe
+                  src="https://www.youtube.com/embed/x7uLutVRBfI?si=6rBP_gzvRkzyNr4u&rel=0" title="Trailer 1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          </div>
+      </div>
+  </section>
+    <section class="countdown__section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+      <h1 class="title title__center">Contagem Regressiva</h1>
+      <div class="countdown" id="countdown">
+        Carregando contagem...
+      </div>
+    </section>
+
+    <section class="gallery__section" id="gallery" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+      <h1 class="title title__center">Lutas Principais</h1>
+      <div class="gallery__galery">
+        <div class="img-container">
+          <img src="geral/img/luta-principal.webp" alt="">
+          <div class="img-text">Akaza vs Tanjiro e Tomioka</div>
+        </div>
+        <div class="img-container">
+          <img src="geral/img/douma-shinobu.png" alt="">
+          <div class="img-text">Douma vs Shinobu</div>
+        </div>
+        <div class="img-container">
+          <img src="geral/img/zenitsu-kaigaku.png" alt="">
+          <div class="img-text">Zenitsu vs Kaigaku</div>
+        </div>
+      </div>
+      <div class="galery__index">
+        <a href="galery.html" class="button">Ver galeria</a>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <a href="index.html" class="footer__logo">
+        <img src="geral/img/logo.svg" alt="logo">
+
+        <ul class="footer__links">
+          <li>
+            <a href="about.html" class="footer__link">Sobre</a>
+          </li>
+          <li>
+            <a href="characters.html" class="footer__link">Personagens</a>
+          </li>
+          <li>
+            <a href="galery.html" class="footer__link">Galeria</a>
+          </li>
+        </ul>
+
+        <div class="footer__social">
+          <a href="https://www.instagram.com/dev.vrmc" target="_blank" class="footer__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://github.com/dev-vrmc" target="_blank" class="footer__social-link">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dev-victor-roger" target="_blank" class="footer__social-link">
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <!-- <a href="https://www.whatsapp.com" target="_blank" class="footer__social-link">
+          <i class="ri-whatsapp-line"></i>
+        </a> !-->
+        </div>
+    </div>
+    <span class="footer__copy">
+      © 2025 <a href="https://dev-vrmc-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Victor Roger</a>. Todos os direitos reservados.
+    </span>
+  </footer>
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+  <script>
+    const musicBtn = document.getElementById('musicToggle');
+    const bgMusic = document.getElementById('bgMusic');
+
+    musicBtn.addEventListener('click', () => {
+      if (bgMusic.paused) {
+        bgMusic.play();
+        musicBtn.innerHTML = '<i class="ri-music-2-fill"></i>';
+      } else {
+        bgMusic.pause();
+        musicBtn.innerHTML = '<i class="ri-play-fill"></i>';
+      }
+    });
+  </script>
+  <script src="geral/js/index.js"> </script>
+  <script src="geral/js/main.js"> </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="geral/js/aos.js"></script>
+</body>
+
+</html>
