@@ -589,6 +589,7 @@ img {
 
 .footer__copy a {
   color: var(--text-color-light-dark);
+  text-decoration: underline;
 }
 
 .scrollup {
